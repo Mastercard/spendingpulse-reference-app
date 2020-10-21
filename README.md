@@ -1,5 +1,5 @@
 # Spending Pulse API Reference Application
-This project showcases the use case of retrieving merchant metrics using the SBDE API [here](https://developer.mastercard.com/drafts/small-business-decision-enhancer/small-business-decision-enhancer-v2/documentation)
+This project showcases the use case of retrieving merchant metrics using the Spending Pulse API [here](https://developer.mastercard.com/drafts/small-business-decision-enhancer/small-business-decision-enhancer-v2/documentation)
 
 ## Frameworks Used
 - Spring
@@ -17,14 +17,10 @@ This project showcases the use case of retrieving merchant metrics using the SBD
 2. Create a new project and add the `Spending Pulse` API to your project. A `.p12` file is downloaded automatically.
 3. Take note of the given **consumer key, keyalias, and keystore password** given upon the project creation.
 4. Copy the downloaded `.p12` file to `/src/main/resources`.
-5. Copy the small-business-decision.yaml file to `/src/main/resources`.
+5. Copy the dw-spendingpulse-api-spec-v1.yaml file to `/src/main/resources`.
 6. Update the pom.xml with with open-api-generator dependencies.
 7. Run `mvn clean install` from the root of the project directory.
 
-
-## Tutorial
-A tutorial can be found [here](https://developer.mastercard.com/drafts/small-business-decision-enhancer/S1509344-tutorials/documentation/tutorials-and-guides/) 
-for setting up and using this service.
 
 ## Mastercard oauth1 Signer
 This dependency is required to properly call the API.
