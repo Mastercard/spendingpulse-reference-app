@@ -108,21 +108,21 @@ These are the parameters used for all Spending Pulse API. All parameters are opt
 
 | Name      | Type      | Default Value      | Purpose       |
 |-----------|-----------|--------------------|---------------|
-| currentRow    | string       | 1                  | For Pagination; currentRow is used to offset the start of the list.        |
-| offset     | string       | 25         | For Pagination; offset is used to limit the number of entities returned |
+| currentRow    | string       | 1          | For Pagination; currentRow is used to offset the start of the list.     |
+| offset        | string       | 25         | For Pagination; offset is used to limit the number of entities returned |
 
 #### Parameters for /spendingpulse endpoint <a name="spulse-params"></a>
 These are optional parameters used for the Spending Pulse API endpoint, "/spendingpulse".
 
 | Name      | Type      | Default Value      | Purpose       |
 |-----------|-----------|--------------------|---------------|
-| country   | string    | US         | Country code. |
-| ecomm     | string    | Y          | Ecommerce indicator. |
+| country   | string    | US         | Country code.         |
+| ecomm     | string    | Y          | Ecommerce indicator.  |
 | period    | string    | Weekly     | Indicates the period covered by the data with possible values of - day, week, month, quarter, annual |
 | productLine | string      | Weekly Sales  | Product Line. Either “US Executive Report” or “Weekly Sales” |
-| publicationCoveragePeriod | string     | 25         | Publication Coverage Period indicates what period is to be covered, often the current report will include the month prior. |
-| reportType  | string      | 25         | Report type name, today the only report supported is "monitor". |
-| sector      | string      | 25         | Sector name. |
+| publicationCoveragePeriod | string        | 25March 2015   | Publication Coverage Period indicates what period is to be covered, often the current report will include the month prior. |
+| reportType  | string      | reportA       | Report type name, today the only report supported is "monitor". |
+| sector      | string      | sectorA       | Sector name.   |
 
 
 ## API Reference <a name="api-reference"></a>
