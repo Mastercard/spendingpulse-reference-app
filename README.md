@@ -113,6 +113,7 @@ These are the parameters used for all Spending Pulse API. All parameters are opt
 
 #### Parameters for /spendingpulse endpoint <a name="spulse-params"></a>
 These are optional parameters used for the Spending Pulse API endpoint, "/spendingpulse".
+
 | Name      | Type      | Default Value      | Purpose       |
 |-----------|-----------|--------------------|---------------|
 | country   | string    | US         | Country code. |
