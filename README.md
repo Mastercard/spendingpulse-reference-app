@@ -120,7 +120,7 @@ These are optional parameters used for the Spending Pulse API endpoint, "/spendi
 | ecomm     | string    | Y          | Ecommerce indicator.  |
 | period    | string    | Weekly     | Indicates the period covered by the data with possible values of - day, week, month, quarter, annual |
 | productLine | string      | Weekly Sales  | Product Line. Either “US Executive Report” or “Weekly Sales” |
-| publicationCoveragePeriod | string        | 25March 2015   | Publication Coverage Period indicates what period is to be covered, often the current report will include the month prior. |
+| publicationCoveragePeriod | string        | March 2015   | Publication Coverage Period indicates what period is to be covered, often the current report will include the month prior. |
 | reportType  | string      | reportA       | Report type name, today the only report supported is "monitor". |
 | sector      | string      | sectorA       | Sector name.   |
 
