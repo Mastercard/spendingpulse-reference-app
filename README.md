@@ -14,7 +14,7 @@
     * [Integrating with OpenAPI Generator](#integrating-with-openapi-generator)
 - [Use Cases](#use-cases)
     * [Parameters](#parameters)
-    * [Optional Body](#body)
+    * [Optional Body](#spulse-params)
 - [API Reference](#api-reference)
 - [Authentication](#authentication)
     * [Mastercard's OAuth Library](#oauth-library)
@@ -104,26 +104,25 @@ in the project's root directory.
 ## Use Cases <a name="use-cases"></a>
 
 #### Parameters <a name="parameters"></a>
-These are the parameters used for the Spending Pulse API. All parameters are optional.
+These are the parameters used for all Spending Pulse API. All parameters are optional.
 
 | Name      | Type      | Default Value      | Purpose       |
 |-----------|-----------|--------------------|---------------|
-| currentRow    | string       | 1                  | For Pagination; currentRow is used to offset the start of the list.        |
-| offset     | string       | 25                 | For Pagination; offset is used to limit the number of entities returned |
+| currentRow    | string       | 1          | For Pagination; currentRow is used to offset the start of the list.     |
+| offset        | string       | 25         | For Pagination; offset is used to limit the number of entities returned |
 
-#### Optional Body <a name="body"></a>
-This is an optional body used for the Spending Pulse API endpoint, "spendingpulse".
-```JSON
-{
-  "country": "UK",
-  "ecomm": "yes",
-  "period": "Week",
-  "productLine": "Weekly Sales",
-  "publicationCoveragePeriod": "Week",
-  "reportType": "monitor",
-  "sector": "Sporting Goods"
-}
-```
+#### Parameters for /spendingpulse endpoint <a name="spulse-params"></a>
+These are optional parameters used for the Spending Pulse API endpoint, "/spendingpulse".
+
+| Name      | Type      | Default Value      | Purpose       |
+|-----------|-----------|--------------------|---------------|
+| country   | string    | US         | Country code.         |
+| ecomm     | string    | Y          | Ecommerce indicator.  |
+| period    | string    | Weekly     | Indicates the period covered by the data with possible values of - day, week, month, quarter, annual |
+| productLine | string      | Weekly Sales  | Product Line. Either “US Executive Report” or “Weekly Sales” |
+| publicationCoveragePeriod | string        | March 2015   | Publication Coverage Period indicates what period is to be covered, often the current report will include the month prior. |
+| reportType  | string      | reportA       | Report type name, today the only report supported is "monitor". |
+| sector      | string      | sectorA       | Sector name.   |
 
 
 ## API Reference <a name="api-reference"></a>
